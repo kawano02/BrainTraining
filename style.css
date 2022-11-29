@@ -1,0 +1,485 @@
+* {
+  box-sizing: border-box;
+}
+
+/* 共通部分ここから */
+
+.base-panel-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.base-panel {
+  border: 1px solid;
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding-top: 25px;
+}
+
+.startCategory {
+  font-weight: normal;
+  margin-bottom: 0px;
+  color:darkslateblue;
+}
+
+.clear-wrap {
+  position: relative;
+}
+
+.clear {
+  position: absolute;
+  display: none;
+  left: 50%;
+  transform:translateX(-50%);
+  font-size: 50px;
+  color: gold;
+}
+
+/* 共通部分ここまで */
+
+.observe-panel {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto 0 auto;
+}
+
+.panelNum{
+  width: calc(20% - 40px / 5);
+  height: calc(20% - 40px / 5);
+}
+
+.panelNum:nth-child(5n) {
+  margin-right: 0;
+}
+
+.panelNum:nth-child(-n+5) {
+  margin-top: 0;
+}
+
+.observe-clear {
+  top: -100px;
+}
+
+/* ここから記憶力 */
+
+.memory-panel-wrap {
+  width: 400px;
+  height: 400px;
+  margin: 120px auto 0 auto;
+}
+
+.memory-panel {
+  width: calc(20% - 40px / 5);
+  height: calc(25% - 30px / 4);
+  position: relative;
+}
+
+.memoryBody {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.memory-panel:nth-child(5n) {
+  margin-right: 0;
+}
+
+.memory-panel:nth-child(-n + 5) {
+  margin-top: 0;
+}
+
+.memoryClear {
+  top: -100px;
+}
+
+/* 記憶力ここまで */
+
+
+/* 判断力ここから */
+.judgementMainWrap {
+  width: 240px;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 80px auto 0 auto;
+  border-radius: 10px;
+}
+
+.judgementDescription {
+  text-align: center;
+}
+
+.judgement-panel-wrap {
+  width: 400px;
+  height: 250px;
+  margin: 50px auto;
+}
+
+.judgement-panel {
+  width: calc(50% - 10px / 2);
+  height: calc(50% - 10px / 2);
+  font-size: 40px;
+  border-color: black;
+  background-color: rgba(255, 165, 0, 0.7);
+}
+
+.judgement-panel:nth-child(2n) {
+  margin-right: 0;
+}
+
+.judgement-panel:nth-child(-n + 2) {
+  margin-top: 0;
+}
+
+.judgementMain {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 30px;
+}
+
+.judgeCorrectMiss {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  font-size: 30px;
+  transform: translate(-50%, 0);
+}
+
+.judgeClear {
+  top: -100px;
+}
+
+/* 判断力ここまで */
+
+
+/* 計算力ここから */
+.calculationPlace {
+  position: relative;
+}
+
+.calculationAnswer {
+  position: absolute;
+  left: calc(50% + 60px);
+  /* top: 130px; */
+  top: 100px;
+  font-size: 30px;
+}
+
+.formula {
+  position: absolute;
+  /* top: 100px; */
+  top: 70px;
+  left: calc(50% - 30px);
+  transform: translateX(-50%);
+  font-size: 30px;
+}
+
+.calculation-panel-wrap {
+  width: 350px;
+  height: 350px;
+  margin: 250px auto 0 auto;
+}
+
+.calculationPanel {
+  width: calc(100% / 3 - 20px / 3);
+  height: calc(25% - 30px / 4);
+  padding-top: 18px;
+}
+
+.calculationPanel:nth-child(3n) {
+  margin-right: 0;
+}
+
+.calculationPanel:nth-child(-n + 3) {
+  margin-top: 0;
+}
+
+.calcCorrectMiss {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  font-size: 30px;
+  transform: translate(-50%, 0);
+}
+
+.calcClear {
+  top: -105px;
+}
+
+/* 計算力ここまで */
+
+
+/* 反応力ここから */
+.jankenOpponentImgWrap {
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+  margin: 0 auto;
+}
+
+#jankenOpponentImg {
+  display: inline-block;
+  width: 70%;
+  height: 70%;
+  margin-left: 30px;
+  margin-top: 30px;
+  transform: scale(-1, -1);
+}
+
+.jankenChoices {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  height: 200px;
+  margin: 80px auto 0 auto;
+}
+
+.jankenMyImgWrap {
+  width: calc(100% / 3 - 20px / 3);
+  background-color:cornflowerblue;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.jankenMyImgWrap:nth-child(3) {
+  margin-right: 0;
+}
+
+.jankenMyImg {
+  display: inline-block;
+  width: 70%;
+  height: 70%;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.clearConditions {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.responseClear {
+  top: -100px;
+}
+
+.responseCorrectMiss {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  font-size: 26px;
+  transform: translate(-50%, 0);
+}
+
+/* 反応力ここまで */
+
+
+/* 直感力ここから */
+
+.intuition-count-wrap {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.intuition-count {
+  text-align: right;
+  font-size: 20px;
+}
+
+.intuition-problem-wrap {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.intuition-problem-num {
+  display: inline-block;
+  font-size: 30px;
+}
+.intuition-problem-sub {
+  display: inline-block;
+}
+
+.intuition-timer-wrap {
+  border: 1px solid;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.intuition-timer-sub {
+  font-size: 20px;
+}
+
+.intuition-timer {
+  font-size: 50px;
+  margin: 0 auto 30px auto;
+  position: absolute;
+  top: 70px;
+  left: 90px;
+}
+
+.intuitionClear {
+  top: -100px;
+}
+
+/* 直感力ここまで */
+
+
+/* スタート画面ここから */
+
+.startCategoryWrap {
+  width: 400px;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.startCategory {
+  width: calc(50% - 30px / 2);
+  height: calc(100% / 3 - 60px / 3);
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+#category2, #category4, #category6 {
+  margin-right: 0;
+}
+
+#category0 {
+  margin: 55px auto 0 auto;
+  width: 185px;
+}
+
+#gameTitle {
+  text-align: center;
+  font-size: 70px;
+  color: blue;
+}
+
+/* タイマーと進行状況 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.header p{
+  font-size: 20px;
+}
+
+
+/* リザルト画面 */
+
+.result-message {
+  text-align: center;
+}
+
+.star-wrap {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.star {
+  font-size: 50px;
+  color: #CCCCCC;
+}
+
+#star1 {
+  color: #ffcf32; 
+}
+
+.result-wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.result-category {
+  height: 120px;
+  text-align: center;
+  padding-top: 0;
+}
+
+.result-category h3 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.result-category p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.result-panel {
+  width: 200px;
+  margin: 50px auto 0 auto;
+  padding-top: 0;
+  font-weight: normal;
+}
+
+
+@media screen and (max-width: 959px) {
+  .header {
+    max-width: 90%;
+  }
+
+  .observe-panel {
+    width: 400px;
+    height: 400px;
+  }
+
+  .panelNum {
+    padding-top: 12px;
+  }
+
+  .jankenChoices {
+    width: 450px;
+    height: 150px;
+  } 
+  .jankenOpponentImgWrap {
+    width: 150px;
+    height: 150px;
+  }
+
+  .jankenMyImg {
+    margin-left: 22.5px;
+    margin-top: 22.5px;
+  }
+
+  #jankenOpponentImg {
+    margin-left: 22.5px;
+    margin-top: 22.5px;
+  }
+
+  .intuition-count-wrap {
+    max-width: 90%;
+  }
+
+  .result-wrap {
+    width: 400px;
+  }
+
+  .result-category {
+    width: calc(100% / 3);
+  }
+
+}
+

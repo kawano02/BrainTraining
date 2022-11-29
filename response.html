@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <a href="index.html">ホーム</a>
+
+
+  <div class="header">
+    <p class="timer">0</p>
+
+    <div class="responseProblemCountWrap">
+      <p class="responseProblemCount">0/10</p>
+    </div>
+  </div>
+
+  <div class="clear-wrap">
+    <h1 class="clear responseClear">CLEAR!</h1>
+  </div>
+
+  <p class="responseCorrectMiss"></p>
+
+  <p class="clearConditions"></p>
+  <div class="jankenOpponentImgWrap">
+    <img src="image/paper.png" id="jankenOpponentImg">
+  </div>
+
+  <div class="jankenChoices" >
+    <div class="jankenMyImgWrap" id="janken1">
+      <img src="image/rock.png" alt="" class="jankenMyImg">
+    </div>
+    <div class="jankenMyImgWrap" id="janken2">
+      <img src="image/scissors.png" alt="" class="jankenMyImg">
+    </div>
+    <div class="jankenMyImgWrap" id="janken3">
+      <img src="image/paper.png" alt="" class="jankenMyImg">
+    </div>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
